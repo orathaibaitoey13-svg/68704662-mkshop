@@ -33,6 +33,12 @@ const routes = [
     component: () => import("../views/login.vue"),
   },
   {
+    path: "/category",
+    name: "category",
+    component: () => import("../views/categorys.vue"),
+    meta: { requiresAuth: true },
+  },
+  {
     path: "/report",
     name: "ReportChart",
     component: () => import("../views/ReportChart.vue"),
